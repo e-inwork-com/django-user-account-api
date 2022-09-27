@@ -1,5 +1,5 @@
 # Django User Account API
-The template project for the Django REST Framework
+The template project for the REST API using Django
 
 ## Main Requirement
 ### All requirements will be automatically installed when run this application in Docker
