@@ -1,0 +1,11 @@
+# Core
+Django>=4.1
+psycopg2>=2.8
+djangorestframework==3.14.0
+djangorestframework_simplejwt==5.2.0
+
+# API Doc
+drf_yasg==1.21.4
+
+# Test
+faker==11.1.0
