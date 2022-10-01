@@ -1,4 +1,4 @@
-# e-inwork.com 
+# [e-inwork.com](https://e-inwork.com)
 # Django User Account API
 The template project for the REST API using Django
 
@@ -11,6 +11,7 @@ The template project for the REST API using Django
 | Django REST Framework             | 3.14.0                                                                                                             |
 | Django REST Framework Simple JWT  | 5.2.0                                                                                                             |
 | Yet another Swagger generator     | 1.21.4                                                                                                             |
+| Django CORS Header                | 3.13.0                                                                                                            |
 | PostgreSQL                        | latest                                                                                                             |  
 
 ### More detail about all Python packages and requirements software for this application check on the file:
@@ -22,6 +23,7 @@ The template project for the REST API using Django
    - Login using an email
    - Base Class View REST API with a Model Serializer and a User Permission
    - JSON Web Token for the user authentication
+   - CORS Allowed Host to connect with the frontend 
    - API Documentation with manual testing using Swagger
    - Unit Testing for the User REST API, including authentication login, access with a token, and update with a token 
    - Docker Compose for the development environment
