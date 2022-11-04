@@ -43,7 +43,7 @@ The template project for the REST API using Django
    ```
 4. Create all related tables for this application:
    ```
-   docker-compose run api ./manage.py migrate
+   docker-compose exec api ./manage.py migrate
    ```
 5. Open the API Documentation, and manual testing on the browser:
    - http://localhost:8000
@@ -51,7 +51,7 @@ The template project for the REST API using Django
 ### Manual testing in the terminal using CURL
 1. Create or register a user:
    ```
-   curl -d '{"email":"jon@doe.com", "password":"pa55word", "first_name": "Jon", "last_name": "Doe"}' -H "Content-Type: application/json" -X POST http://localhost:4000/api/users/
+   curl -d '{"email":"jon@doe.com", "password":"pa55word", "first_name": "Jon", "last_name": "Doe"}' -H "Content-Type: application/json" -X POST http://localhost:8000/api/users/
    ```
 2. Get a token or login :
    ```
