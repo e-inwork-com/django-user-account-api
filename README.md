@@ -36,16 +36,27 @@ The template project for the REST API using Django
    ```
    git clone git@github.com:e-inwork-com/django-user-account-api
    ```
-3. Change the active folder to `django-user-account-api` and run Docker Compose:
+3. If run this application alongside the frontend at this link: https://github.com/e-inwork-com/nextjs-user-account-web-app, copy file `sample_settings.py` to `local_settings.oy` otherwise skip this step.
    ```
    cd django-user-account-api
+   cd useraccountapi
+   cp sample_settings.py local_settings.py
+   cd ..
+   cd ..
+   ```
+4. Change the active folder to `django-user-account-api`:
+   ```
+   cd django-user-account-api
+   ```
+5. Run Docker Composee:
+   ```
    docker-compose up -d
    ```
-4. Create all related tables for this application:
+6. Migrate DB tables for this application:
    ```
    docker-compose exec api ./manage.py migrate
    ```
-5. Open the API Documentation, and manual testing on the browser:
+7. Open the API Documentation, and manual testing on the browser:
    - http://localhost:8000
 
 ### Manual testing in the terminal using CURL
